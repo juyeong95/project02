@@ -2,8 +2,11 @@ package main;
 
 import java.util.Scanner;
 
+import jihee.Jihee;
+
 public class Main {
 	public static void main(String[] args) {
+		Jihee ji = new Jihee();
 		Scanner input = new Scanner(System.in);
 		while(true) {
 			System.out.println("기능을 선택하세요");
@@ -13,7 +16,9 @@ public class Main {
 			num=input.nextInt();
 			switch(num) {
 			case 1: break;
-			case 2: break;
+			case 2: 
+				ji.memberView();
+				break;
 			case 3: break;
 			case 4: break;
 			case 5: break;
